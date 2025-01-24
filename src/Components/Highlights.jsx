@@ -204,54 +204,56 @@ const Highlights = () => {
         </div>
       </div>
 
-{/* flex big image  */}
+      {/* flex big image  */}
 
-<div className="bg-gray-50 py-10">
-  <div className="max-w-7xl mx-auto px-4">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-      {/* Text Section */}
-      <div className="mb-[75%]">
-        <h2 className="text-4xl font-bold mb-4">The Impact of Your Voice</h2>
-        <p className="text-gray-600 mb-6">
-          Discover how our community members have been touched by the programs
-          and events at Heritage Haven. Their voices reflect the profound impact
-          of our mission to preserve and celebrate cultural heritage.
-        </p>
-        <div className="bg-white shadow-md p-6 rounded-lg flex items-center">
-          <img
-            src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/thumbnail_female_tLYrYwcB.webp"
-            alt="Emily Johnson"
-            className="w-16 h-16 rounded-full mr-4"
-          />
-          <div>
-            <p className="text-gray-800 mb-2">
-              Heritage Haven's workshops have deepened my understanding of our
-              local history. The events are well-organized and truly engaging.
-            </p>
-            <h4 className="font-bold text-gray-900">Emily Johnson</h4>
-            <p className="text-gray-600 text-sm">Local Historian</p>
+      <div className="bg-gray-50 py-10">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            {/* Text Section */}
+            <div className="mb-[75%]">
+              <h2 className="text-4xl font-bold mb-4">
+                The Impact of Your Voice
+              </h2>
+              <p className="text-gray-600 mb-6">
+                Discover how our community members have been touched by the
+                programs and events at Heritage Haven. Their voices reflect the
+                profound impact of our mission to preserve and celebrate
+                cultural heritage.
+              </p>
+              <div className="bg-white shadow-md p-6 rounded-lg flex items-center">
+                <img
+                  src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/thumbnail_female_tLYrYwcB.webp"
+                  alt="Emily Johnson"
+                  className="w-16 h-16 rounded-full mr-4"
+                />
+                <div>
+                  <p className="text-gray-800 mb-2">
+                    Heritage Haven's workshops have deepened my understanding of
+                    our local history. The events are well-organized and truly
+                    engaging.
+                  </p>
+                  <h4 className="font-bold text-gray-900">Emily Johnson</h4>
+                  <p className="text-gray-600 text-sm">Local Historian</p>
+                </div>
+              </div>
+              {/* Pagination Dots */}
+              <div className="flex justify-start mt-4 space-x-2">
+                <button className="w-3 h-3 bg-gray-400 rounded-full" />
+                <button className="w-3 h-3 bg-gray-800 rounded-full" />
+                <button className="w-3 h-3 bg-gray-400 rounded-full" />
+              </div>
+            </div>
+            {/* Image Section */}
+            <div>
+              <img
+                src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_t3J2kz4n.webp"
+                alt="Community Event"
+                className="w-full rounded-3xl shadow-md"
+              />
+            </div>
           </div>
         </div>
-        {/* Pagination Dots */}
-        <div className="flex justify-start mt-4 space-x-2">
-          <button className="w-3 h-3 bg-gray-400 rounded-full" />
-          <button className="w-3 h-3 bg-gray-800 rounded-full" />
-          <button className="w-3 h-3 bg-gray-400 rounded-full" />
-        </div>
       </div>
-      {/* Image Section */}
-      <div>
-        <img
-          src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_t3J2kz4n.webp"
-          alt="Community Event"
-          className="w-full rounded-3xl shadow-md"
-        />
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
       {/* Footer */}
 

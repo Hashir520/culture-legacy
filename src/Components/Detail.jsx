@@ -25,7 +25,7 @@ const Detail = () => {
               About Us
             </Link>
             <Link to="/hilights" className="font-bold text-black ">
-           Community
+              Community
             </Link>
             <Link to="/events" className="font-bold text-black ">
               Events
@@ -74,9 +74,6 @@ const Detail = () => {
       </header>
 
       {/* Discription */}
-
-     
-  
     </>
   );
 };

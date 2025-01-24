@@ -31,7 +31,7 @@ const About = () => {
             About Us
           </Link>
           <Link to="/hilights" className="font-bold text-black ">
-          Community
+            Community
           </Link>
           <Link to="/events" className="font-bold text-black ">
             Events
@@ -245,10 +245,10 @@ const About = () => {
         </p>
 
         <div className="pt-4 pb-6">
-          <Link to ="/detail">
-          <button className="border border-orange-600 px-6 rounded-md py-2 text-orange-600 hover:bg-orange-700 transition ease-in-out duration-300 transform hover:scale-95 hover:text-white text-lg font-semibold">
-            Learn More
-          </button>
+          <Link to="/detail">
+            <button className="border border-orange-600 px-6 rounded-md py-2 text-orange-600 hover:bg-orange-700 transition ease-in-out duration-300 transform hover:scale-95 hover:text-white text-lg font-semibold">
+              Learn More
+            </button>
           </Link>
         </div>
       </div>
