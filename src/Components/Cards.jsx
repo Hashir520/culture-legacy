@@ -3,7 +3,7 @@ import React from "react";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Mol Tanitu",
+      name: "Hashir Shahid",
       role: "Local Artist",
       img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid", // Replace with actual image URLs
       text: "Heritage Haven's workshops have inspired my art and deepened my understanding of cultural traditions.",
