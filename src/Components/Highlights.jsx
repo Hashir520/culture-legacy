@@ -244,7 +244,7 @@ const Highlights = () => {
         <img
           src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_t3J2kz4n.webp"
           alt="Community Event"
-          className="w-full rounded-lg shadow-md"
+          className="w-full rounded-3xl shadow-md"
         />
       </div>
     </div>
