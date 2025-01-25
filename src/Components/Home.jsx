@@ -1,4 +1,5 @@
-import React from "react";
+ import React from "react";
+
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,7 +10,46 @@ import {
   faPinterest,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+
 const Home = () => {
+  const testimonials = [
+        {
+          name: "Hashir Shahid",
+          role: "Local Artist",
+          img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid", // Replace with actual image URLs
+          text: "Heritage Haven's workshops have inspired my art and deepened my understanding of cultural traditions.",
+        },
+        {
+          name: "Michael Smith",
+          role: "History Teacher",
+          img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid",
+          text: "The educational programs are engaging and informative, making history come alive for my students.",
+        },
+        {
+          name: "Sarah Lee",
+          role: "Festival Attendee",
+          img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid",
+          text: "The annual heritage festival was a fantastic experience! I loved the diverse performances and food.",
+        },
+        {
+          name: "David Brown",
+          role: "Community Volunteer",
+          img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid",
+          text: "Volunteering at Heritage Haven has been rewarding. The team is passionate and dedicated to cultural preservation.",
+        },
+        {
+          name: "Laura White",
+          role: "Parent",
+          img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid",
+          text: "My kids loved the cultural crafts workshop! It was a fun way to learn about different cultures.",
+        },
+        {
+          name: "James Wilson",
+          role: "Cultural Enthusiast",
+          img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid",
+          text: "Heritage Haven is a gem in our community, offering rich experiences that celebrate our diverse heritage.",
+        },
+      ];
   return (
     <>
       <header
@@ -19,45 +59,53 @@ const Home = () => {
             'url("https://upload.wikimedia.org/wikipedia/commons/0/09/Badshahi_Mosque_Sunset.jpg")',
         }}
       >
-        <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-md flex justify-between items-center py-4 px-4 md:px-8 uppercase text-black">
-          {/* Logo */}
-          <div className="w-1/5 text-center">
-            <h1 className="text-sm md:text-lg text-red-800  font-extrabold cursor-pointer whitespace-nowrap">
-              Heritage <span className="text-orange-500">Legacy</span>
-              <span className="text-fuchsia-800"> By AI</span>
-            </h1>
-          </div>
-          {/* Navigation Links */}
-          <div className="hidden md:hidden lg:flex w-2/4 justify-around">
-            <a className="font-bold text-black cursor-pointer">Home</a>
-            <Link to="/about" className="font-bold text-black ">
-              About Us
-            </Link>
-            <Link to="/hilights" className="font-bold text-black ">
-              Community
-            </Link>
-            <Link to="/events" className="font-bold text-black ">
-              Events
-            </Link>
-            <a href="#" className="font-bold text-black ">
-              Contact
-            </a>
-          </div>
-          {/* Hamburger Menu */}
-          <div className="lg:hidden text-black font-bold cursor-pointer">
-            &#9776;
-          </div>
-        </nav>
+          <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-md flex justify-between items-center py-4 px-4 md:px-8 uppercase text-black">
+                {/* Logo */}
+                <div className="w-1/5 text-center">
+                  <h1 className="text-sm md:text-lg text-red-800   font-extrabold cursor-pointer whitespace-nowrap">
+                    Heritage <span className="text-orange-500">Legacy</span>
+                    <span className="text-fuchsia-800"> By AI</span>
+                  </h1>
+                </div>
+                {/* Navigation Links */}
+                <div className="hidden md:hidden lg:flex w-2/4 justify-around">
+                  <Link to="/home" className="font-bold text-black ">
+                    Home
+                  </Link>
+                  <Link to="/about" className="font-bold text-black ">
+                    About Us
+                  </Link>
+                  <Link to="/hilights" className="font-bold text-black ">
+                    Community
+                  </Link>
+                  <Link to="/events" className="font-bold text-black ">
+                    Events
+                  </Link>
+                  <a href="#" className="font-bold text-black ">
+                    Contact
+                  </a>
+                </div>
+                {/* Hamburger Menu */}
+                <div className="lg:hidden text-black font-bold cursor-pointer">
+                  &#9776;
+                </div>
+              </nav>
 
         <main className="h-[85vh] flex flex-col justify-center items-center text-center text-white px-4 md:px-8">
           <section>
             <div className="pt-36">
               <div className="relative overflow-hidden h-16">
-                <h3 className="text-2xl md:text-5xl  whitespace-nowrap tracking-wide drop-shadow-lg font-bold transform transition-transform duration-700 ease-in-out hover:-translate-y-4">
+                <h3
+                  id="checks"
+                  className="text-2xl md:text-5xl  whitespace-nowrap tracking-wide drop-shadow-lg font-bold "
+                >
                   Welcome to Heritage Legacy
                 </h3>
               </div>
-              <p className="text-sm md:text-lg mb-6 md:mb-4 leading-relaxed mx-auto max-w-screen-md">
+              <p
+               
+                className="text-sm md:text-lg mb-6 md:mb-4 leading-relaxed mx-auto max-w-screen-md"
+              >
                 Discover the beauty of our diverse cultural heritage through
                 engaging programs and events. Join us in celebrating traditions
                 that connect us all. Explore our mission and be part of our
@@ -281,6 +329,45 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <div className="bg-gray-100 py-10">
+       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+        {testimonials.map((item, index) => (
+          <div
+            key={index}
+            className="bg-orange-400 text-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2"
+          >
+            <div className="flex items-center mb-4 ">
+              <img
+                src={item.img}
+                alt={item.name}
+                className="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h3 className="font-bold">{item.name}</h3>
+                <p className="text-sm">{item.role}</p>
+              </div>
+            </div>
+            <p className="mb-4">{item.text}</p>
+            <div className="flex space-x-1">
+              {Array(5)
+                .fill(0)
+                .map((_, starIndex) => (
+                  <svg
+                    key={starIndex}
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    className="w-5 h-5 text-yellow-400"
+                  >
+                    <path d="M12 .587l3.668 7.513 8.332 1.151-6.001 5.856 1.417 8.267L12 18.896l-7.416 4.478L5.999 15.11 0 9.254l8.332-1.151z" />
+                  </svg>
+                ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
 
       {/* Footer */}
 
