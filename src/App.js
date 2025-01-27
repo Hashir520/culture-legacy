@@ -7,6 +7,7 @@ import About from "./Components/About";
 import Highlights from "./Components/Highlights";
 import Events from "./Components/Events";
 import Detail from "./Components/Detail";
+import Contact from "./Components/Contact";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
     element: <About />,
   },
   {
-    path: "/home",
+    path: "/",
     element: <Home />,
   },
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: "/events",
     element: <Events />,
+  },
+  {
+    path: "/contact",
+    element: <Contact/>,
   },
 ]);
 

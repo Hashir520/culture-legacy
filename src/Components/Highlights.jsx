@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
@@ -9,64 +8,42 @@ import {
   faPinterest,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import Cards from "./Cards";
+import Navbar from "./Navbar";
 const Highlights = () => {
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-md flex justify-between items-center py-4 px-4 md:px-8 uppercase text-black">
-        {/* Logo */}
-        <div className="w-1/5 text-center">
-          <h1 className="text-sm md:text-lg text-red-800   font-extrabold cursor-pointer whitespace-nowrap">
-            Heritage <span className="text-orange-500">Legacy</span>
-            <span className="text-fuchsia-800"> By AI</span>
-          </h1>
+      <Navbar />
+      <div className="px-6 lg:px-20 lg:pt-24">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-16 gap-8">
+          {/* Image Section */}
+          <div className="lg:w-1/2">
+            <img
+              src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_pLtNSpOU.webp"
+              alt="Heritage Festival"
+              className="w-full rounded-lg shadow-md"
+            />
+          </div>
+          {/* Text Section */}
+          <div className="lg:w-1/2 mb-10 lg:mb-0 lg:pt-24">
+            <h2 className="text-2xl text-center lg:text-4xl font-bold mb-6">
+              The Power of Community Voices
+            </h2>
+            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+              At Heritage Haven, we believe that the voices of our community are
+              vital in preserving and promoting cultural heritage. Through
+              testimonials, we gain insights into the impact of our programs and
+              events, helping us to continuously improve and celebrate our
+              diverse history together.
+            </p>
+           
+          </div>
         </div>
-        {/* Navigation Links */}
-        <div className="hidden md:hidden lg:flex w-2/4 justify-around">
-          <Link to="/home" className="font-bold text-black ">
-            Home
-          </Link>
-          <Link to="/about" className="font-bold text-black ">
-            About Us
-          </Link>
-          <Link to="/hilights" className="font-bold text-black ">
-            Community
-          </Link>
-          <Link to="/events" className="font-bold text-black ">
-            Events
-          </Link>
-          <a href="#" className="font-bold text-black ">
-            Contact
-          </a>
-        </div>
-        {/* Hamburger Menu */}
-        <div className="lg:hidden text-black font-bold cursor-pointer">
-          &#9776;
-        </div>
-      </nav>
-      <div className="pt-20 sm:pt-40 text-center px-4 sm:px-8 lg:px-20">
-        <h1 className="text-2xl sm:text-4xl font-bold  ">
-          The Power of Community Voices
-        </h1>
-        <p className="text-base sm:text-lg pt-4">
-          At Heritage Haven, we believe that the voices of our community are
-          vital in preserving and promoting cultural heritage. Through
-          testimonials,
-          <br className="hidden sm:block" /> we gain insights into the impact of
-          our programs and events, helping us to continuously improve and
-          celebrate our diverse history together.
-        </p>
-      </div>
-
-      <div className="px-[25%] pt-10">
-        <img
-          src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_pLtNSpOU.webp"
-          alt=""
-        />
       </div>
 
       {/* Community Cards  */}
 
-      <div className="bg-gray-50 py-10">
+      {/* <div className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-5xl font-bold text-center mb-4">
             Community Voices
@@ -202,58 +179,52 @@ const Highlights = () => {
             </div>
           </div>
         </div>
-      </div>
-
+      </div> */}
+      <Cards />
       {/* flex big image  */}
 
-      <div className="bg-gray-50 py-10">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            {/* Text Section */}
-            <div className="mb-[75%]">
-              <h2 className="text-4xl font-bold mb-4">
-                The Impact of Your Voice
-              </h2>
-              <p className="text-gray-600 mb-6">
-                Discover how our community members have been touched by the
-                programs and events at Heritage Haven. Their voices reflect the
-                profound impact of our mission to preserve and celebrate
-                cultural heritage.
-              </p>
-              <div className="bg-white shadow-md p-6 rounded-lg flex items-center">
-                <img
-                  src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/thumbnail_female_tLYrYwcB.webp"
-                  alt="Emily Johnson"
-                  className="w-16 h-16 rounded-full mr-4"
-                />
-                <div>
-                  <p className="text-gray-800 mb-2">
-                    Heritage Haven's workshops have deepened my understanding of
-                    our local history. The events are well-organized and truly
-                    engaging.
-                  </p>
-                  <h4 className="font-bold text-gray-900">Emily Johnson</h4>
-                  <p className="text-gray-600 text-sm">Local Historian</p>
-                </div>
-              </div>
-              {/* Pagination Dots */}
-              <div className="flex justify-start mt-4 space-x-2">
-                <button className="w-3 h-3 bg-gray-400 rounded-full" />
-                <button className="w-3 h-3 bg-gray-800 rounded-full" />
-                <button className="w-3 h-3 bg-gray-400 rounded-full" />
-              </div>
-            </div>
-            {/* Image Section */}
-            <div>
-              <img
-                src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_t3J2kz4n.webp"
-                alt="Community Event"
-                className="w-full rounded-3xl shadow-md"
-              />
-            </div>
-          </div>
+      <div className="px-6 lg:px-20">
+  <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-16">
+    {/* Text Section */}
+    <div className="lg:w-1/2 mb-10 lg:mb-0 lg:pt-10">
+      <h2 className="text-2xl lg:text-start text-center lg:text-3xl font-bold mb-4">
+        The Impact of Your Voice
+      </h2>
+      <p className="text-gray-600 mb-4 text-center text-lg lg:text-left">
+        Discover how our community members have been touched  by the
+        programs and events at Heritage Haven. Their voices  reflect
+        the profound impact of our mission to preserve and 
+        celebrate cultural heritage.
+      </p>
+      <div className="bg-white shadow-full p-6 rounded-lg flex items-center">
+        <img
+          src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/thumbnail_female_tLYrYwcB.webp"
+          alt="Emily Johnson"
+          className="w-16 h-16 rounded-full mr-4"
+        />
+        <div>
+          <p className="text-gray-800 mb-2">
+            Heritage Haven's workshops have deepened my understanding of
+            our local history. The events are well-organized and truly
+            engaging.
+          </p>
+          <h4 className="font-bold text-gray-900">Emily Johnson</h4>
+          <p className="text-gray-600 text-sm">Local Historian</p>
         </div>
       </div>
+    </div>
+
+    {/* Image Section */}
+    <div className="lg:w-1/2 px-10">
+      <img
+        src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_WsPqBSkj.webp"
+        alt="Heritage Festival"
+        className="w-full rounded-lg shadow-md"
+      />
+    </div>
+  </div>
+</div>
+
 
       {/* Footer */}
 

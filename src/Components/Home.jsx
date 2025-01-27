@@ -1,5 +1,4 @@
- import React from "react";
-
+import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,46 +9,47 @@ import {
   faPinterest,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
-
+import Navbar from "./Navbar";
+import HCards from "./HCards"
 const Home = () => {
   const testimonials = [
-        {
-          name: "Hashir Shahid",
-          role: "Local Artist",
-          img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid", // Replace with actual image URLs
-          text: "Heritage Haven's workshops have inspired my art and deepened my understanding of cultural traditions.",
-        },
-        {
-          name: "Michael Smith",
-          role: "History Teacher",
-          img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid",
-          text: "The educational programs are engaging and informative, making history come alive for my students.",
-        },
-        {
-          name: "Sarah Lee",
-          role: "Festival Attendee",
-          img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid",
-          text: "The annual heritage festival was a fantastic experience! I loved the diverse performances and food.",
-        },
-        {
-          name: "David Brown",
-          role: "Community Volunteer",
-          img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid",
-          text: "Volunteering at Heritage Haven has been rewarding. The team is passionate and dedicated to cultural preservation.",
-        },
-        {
-          name: "Laura White",
-          role: "Parent",
-          img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid",
-          text: "My kids loved the cultural crafts workshop! It was a fun way to learn about different cultures.",
-        },
-        {
-          name: "James Wilson",
-          role: "Cultural Enthusiast",
-          img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid",
-          text: "Heritage Haven is a gem in our community, offering rich experiences that celebrate our diverse heritage.",
-        },
-      ];
+    {
+      name: "Hashir Shahid",
+      role: "Local Artist",
+      img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid", // Replace with actual image URLs
+      text: "Heritage Haven's workshops have inspired my art and deepened my understanding of cultural traditions.",
+    },
+    {
+      name: "Michael Smith",
+      role: "History Teacher",
+      img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid",
+      text: "The educational programs are engaging and informative, making history come alive for my students.",
+    },
+    {
+      name: "Sarah Lee",
+      role: "Festival Attendee",
+      img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid",
+      text: "The annual heritage festival was a fantastic experience! I loved the diverse performances and food.",
+    },
+    {
+      name: "David Brown",
+      role: "Community Volunteer",
+      img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid",
+      text: "Volunteering at Heritage Haven has been rewarding. The team is passionate and dedicated to cultural preservation.",
+    },
+    {
+      name: "Laura White",
+      role: "Parent",
+      img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid",
+      text: "My kids loved the cultural crafts workshop! It was a fun way to learn about different cultures.",
+    },
+    {
+      name: "James Wilson",
+      role: "Cultural Enthusiast",
+      img: "https://img.freepik.com/premium-photo/girl-red-shirt-is-holding-american-flag_1277842-22556.jpg?semt=ais_hybrid",
+      text: "Heritage Haven is a gem in our community, offering rich experiences that celebrate our diverse heritage.",
+    },
+  ];
   return (
     <>
       <header
@@ -59,37 +59,7 @@ const Home = () => {
             'url("https://upload.wikimedia.org/wikipedia/commons/0/09/Badshahi_Mosque_Sunset.jpg")',
         }}
       >
-          <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-md flex justify-between items-center py-4 px-4 md:px-8 uppercase text-black">
-                {/* Logo */}
-                <div className="w-1/5 text-center">
-                  <h1 className="text-sm md:text-lg text-red-800   font-extrabold cursor-pointer whitespace-nowrap">
-                    Heritage <span className="text-orange-500">Legacy</span>
-                    <span className="text-fuchsia-800"> By AI</span>
-                  </h1>
-                </div>
-                {/* Navigation Links */}
-                <div className="hidden md:hidden lg:flex w-2/4 justify-around">
-                  <Link to="/home" className="font-bold text-black ">
-                    Home
-                  </Link>
-                  <Link to="/about" className="font-bold text-black ">
-                    About Us
-                  </Link>
-                  <Link to="/hilights" className="font-bold text-black ">
-                    Community
-                  </Link>
-                  <Link to="/events" className="font-bold text-black ">
-                    Events
-                  </Link>
-                  <a href="#" className="font-bold text-black ">
-                    Contact
-                  </a>
-                </div>
-                {/* Hamburger Menu */}
-                <div className="lg:hidden text-black font-bold cursor-pointer">
-                  &#9776;
-                </div>
-              </nav>
+        <Navbar/>
 
         <main className="h-[85vh] flex flex-col justify-center items-center text-center text-white px-4 md:px-8">
           <section>
@@ -103,7 +73,8 @@ const Home = () => {
                 </h3>
               </div>
               <p
-               
+                // ref={textRef}
+                id="chck"
                 className="text-sm md:text-lg mb-6 md:mb-4 leading-relaxed mx-auto max-w-screen-md"
               >
                 Discover the beauty of our diverse cultural heritage through
@@ -190,17 +161,21 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center px-4 md:w-3/4 lg:w-1/2 mx-auto pt-10">
-        <h1 className="text-3xl md:text-5xl font-bold  text-center">
-          Explore Our Engaging Community Programs
+      <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between px-6 lg:px-32 py-16">
+        <h1 className="text-2xl lg:text-4xl font-bold mb-6 lg:mb-0 text-center lg:text-left">
+        Explore Our Engaging Community Programs
         </h1>
-        <p className="text-base md:text-lg  text-gray-600 pt-10 text-justify">
-          Join us at Heritage Haven for a variety of community programs and
-          educational workshops designed to celebrate cultural heritage. Our
-          offerings provide unique opportunities to learn, engage, and
-          appreciate diverse traditions. Discover how you can participate and
-          contribute to preserving our rich history.
-        </p>
+
+        <div className="text-center lg:text-left lg:w-3/4">
+          <p className="text-gray-600 text-justify">
+            Join us at Heritage Haven for a series of enriching cultural events
+            that celebrate our diverse heritage. From interactive workshops to
+            vibrant festivals, there’s something for everyone. Mark your
+            calendars and be part of our community’s journey through history and
+            tradition. Don’t miss out on these unique opportunities to connect
+            and learn.
+          </p>
+        </div>
       </div>
       {/* Cards */}
       <div className="flex items-center justify-center min-h-full pt-10  bg-white ">
@@ -260,19 +235,23 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center px-5 md:w-3/4 lg:w-1/2 mx-auto pt-10">
-        <h1 className="text-4xl md:text-5xl font-bold  text-center">
-          Upcoming Heritage Festivals and Events
-        </h1>
-        <p className="text-base md:text-lg  text-gray-600 pt-10 text-justify">
-          Join us at Heritage Haven for a series of vibrant festivals
-          celebrating diverse cultural traditions. Our events offer a unique
-          opportunity to engage with history through performances, workshops,
-          and culinary experiences. Discover the richness of our shared heritage
-          and connect with the community in meaningful ways. Don’t miss out on
-          these enriching experiences!
-        </p>
-      </div>
+      <div className="flex flex-col lg:flex-row items-start lg:justify-between px-6 lg:px-32 py-16 gap-8">
+  <h1 className="text-2xl lg:text-4xl font-bold text-center lg:text-left">
+    Upcoming Heritage Festivals and Events
+  </h1>
+
+  <div className="text-center lg:text-left lg:w-3/4">
+    <p className="text-gray-600 text-justify leading-relaxed">
+      Join us at Heritage Haven for a series of enriching cultural events
+      that celebrate our diverse heritage. From interactive workshops to
+      vibrant festivals, there’s something for everyone. Mark your
+      calendars and be part of our community’s journey through history and
+      tradition. Don’t miss out on these unique opportunities to connect
+      and learn.
+    </p>
+  </div>
+</div>
+
       {/* Cards */}
       <div className="flex items-center justify-center bg-white py-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 p-5 max-w-7xl w-full">
@@ -330,45 +309,45 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-gray-100 py-10">
-       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
-        {testimonials.map((item, index) => (
-          <div
-            key={index}
-            className="bg-orange-400 text-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2"
-          >
-            <div className="flex items-center mb-4 ">
-              <img
-                src={item.img}
-                alt={item.name}
-                className="w-12 h-12 rounded-full mr-4"
-              />
-              <div>
-                <h3 className="font-bold">{item.name}</h3>
-                <p className="text-sm">{item.role}</p>
+      {/* <div className="bg-gray-100 py-10">
+        <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+          {testimonials.map((item, index) => (
+            <div
+              // key={index}
+              className="bg-orange-400 text-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2"
+            >
+              <div className="flex items-center mb-4 ">
+                <img
+                  src={item.img}
+                  alt={item.name}
+                  className="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <h3 className="font-bold">{item.name}</h3>
+                  <p className="text-sm">{item.role}</p>
+                </div>
+              </div>
+              <p className="mb-4">{item.text}</p>
+              <div className="flex space-x-1">
+                {Array(5)
+                  .fill(0)
+                  .map((_, starIndex) => (
+                    <svg
+                      key={starIndex}
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                      className="w-5 h-5 text-yellow-400"
+                    >
+                      <path d="M12 .587l3.668 7.513 8.332 1.151-6.001 5.856 1.417 8.267L12 18.896l-7.416 4.478L5.999 15.11 0 9.254l8.332-1.151z" />
+                    </svg>
+                  ))}
               </div>
             </div>
-            <p className="mb-4">{item.text}</p>
-            <div className="flex space-x-1">
-              {Array(5)
-                .fill(0)
-                .map((_, starIndex) => (
-                  <svg
-                    key={starIndex}
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    className="w-5 h-5 text-yellow-400"
-                  >
-                    <path d="M12 .587l3.668 7.513 8.332 1.151-6.001 5.856 1.417 8.267L12 18.896l-7.416 4.478L5.999 15.11 0 9.254l8.332-1.151z" />
-                  </svg>
-                ))}
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-
+          ))}
+        </div>
+      </div> */}
+<HCards/>
       {/* Footer */}
 
       <footer className="bg-black py-10 px-6 md:px-12 lg:px-28 text-center">

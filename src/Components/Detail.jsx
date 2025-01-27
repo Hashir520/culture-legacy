@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 const Detail = () => {
   return (
     <>
@@ -10,35 +10,7 @@ const Detail = () => {
             'url("https://t4.ftcdn.net/jpg/07/00/38/11/360_F_700381104_6CJ1BAcf8ompTm7DXinkib9PSVbSRft9.jpg")',
         }}
       >
-        <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-md flex justify-between items-center py-4 px-4 md:px-8 uppercase text-black">
-          {/* Logo */}
-          <div className="w-1/5 text-center">
-            <h1 className="text-sm md:text-lg text-red-800  font-extrabold cursor-pointer whitespace-nowrap">
-              Heritage <span className="text-orange-500">Legacy</span>
-              <span className="text-fuchsia-800"> By AI</span>
-            </h1>
-          </div>
-          {/* Navigation Links */}
-          <div className="hidden md:hidden lg:flex w-2/4 justify-around">
-            <a className="font-bold text-black cursor-pointer">Home</a>
-            <Link to="/about" className="font-bold text-black ">
-              About Us
-            </Link>
-            <Link to="/hilights" className="font-bold text-black ">
-              Community
-            </Link>
-            <Link to="/events" className="font-bold text-black ">
-              Events
-            </Link>
-            <a href="#" className="font-bold text-black ">
-              Contact
-            </a>
-          </div>
-          {/* Hamburger Menu */}
-          <div className="lg:hidden text-black font-bold cursor-pointer">
-            &#9776;
-          </div>
-        </nav>
+        <Navbar/>
         <main className="h-[85vh] flex flex-col justify-center items-center text-center text-white px-4 md:px-8">
           <section>
             <div className="bg-transparent">

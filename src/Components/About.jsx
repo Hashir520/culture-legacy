@@ -10,41 +10,12 @@ import {
   faPinterest,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import Navbar from "./Navbar";
 
 const About = () => {
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-md flex justify-between items-center py-4 px-4 md:px-8 uppercase text-black">
-        {/* Logo */}
-        <div className="w-1/5 text-center">
-          <h1 className="text-sm md:text-lg text-red-800   font-extrabold cursor-pointer whitespace-nowrap">
-            Heritage <span className="text-orange-500">Legacy</span>
-            <span className="text-fuchsia-800"> By AI</span>
-          </h1>
-        </div>
-        {/* Navigation Links */}
-        <div className="hidden md:hidden lg:flex w-2/4 justify-around">
-          <Link to="/home" className="font-bold text-black ">
-            Home
-          </Link>
-          <Link to="/about" className="font-bold text-black ">
-            About Us
-          </Link>
-          <Link to="/hilights" className="font-bold text-black ">
-            Community
-          </Link>
-          <Link to="/events" className="font-bold text-black ">
-            Events
-          </Link>
-          <a href="#" className="font-bold text-black ">
-            Contact
-          </a>
-        </div>
-        {/* Hamburger Menu */}
-        <div className="lg:hidden text-black font-bold cursor-pointer">
-          &#9776;
-        </div>
-      </nav>
+      <Navbar />
       {/* About Discription */}
       <div className="pt-20 sm:pt-40 text-center px-4 sm:px-8 lg:px-20">
         <h1 className="text-2xl sm:text-4xl font-bold  ">
