@@ -135,99 +135,124 @@ const Events = () => {
       </div>
 
       <div className="px-6 lg:px-20">
-  <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-16 border-b border-black">
-    {/* Text Section */}
-    <div className="lg:w-1/2 mb-10 lg:mb-0 lg:pt-20 text-center lg:text-left">
-      <h2 className="text-2xl lg:text-3xl font-bold mb-4">
-        Annual Heritage Festival
-      </h2>
-      <p className="text-gray-600 mb-4 text-sm lg:text-lg ">
-        This festival featured traditional performances, delicious food
-        stalls,
-        and engaging workshops that celebrated our diverse cultural
-        traditions.
-      </p>
-      <div className="flex flex-wrap gap-3 mb-6 text-sm justify-center lg:justify-start">
-        <span className="text-green-600 font-medium">
-          # <span className="text-black">Hands-On Learning</span>
-        </span>
-        <span className="text-green-600 font-medium">
-          # <span className="text-black">Creative Expression</span>
-        </span>
-        <span className="text-green-600 font-medium">
-          # <span className="text-black">Cultural Appreciation</span>
-        </span>
+        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-16 border-b border-black">
+          {/* Text Section */}
+          <div className="lg:w-1/2 mb-10 lg:mb-0  text-center lg:text-left">
+            <h2 className="text-2xl lg:text-4xl font-bold mb-4">
+              Annual Heritage Festival
+            </h2>
+            <p className="text-gray-600 mb-4 text-sm lg:text-lg ">
+              This festival featured traditional performances, delicious food
+              stalls, and engaging workshops that celebrated our diverse
+              cultural traditions.
+            </p>
+            <p className="text-gray-600 mb-4 text-sm lg:text-lg ">
+              This festival featured traditional performances, delicious food
+              stalls, and engaging workshops that celebrated our diverse
+              cultural traditions.
+            </p>
+            <p className="text-gray-600 mb-4 text-sm lg:text-lg ">
+              This festival featured traditional performances, delicious food
+              stalls, and engaging workshops that celebrated our diverse
+              cultural traditions.
+            </p>
+            <div className="flex flex-wrap gap-3 mb-6 text-sm justify-center lg:justify-start">
+              <span className="text-green-600 font-medium">
+                # <span className="text-black">Hands-On Learning</span>
+              </span>
+              <span className="text-green-600 font-medium">
+                # <span className="text-black">Creative Expression</span>
+              </span>
+              <span className="text-green-600 font-medium">
+                # <span className="text-black">Cultural Appreciation</span>
+              </span>
+            </div>
+            <a
+              href="#"
+              className="text-orange-500 text-lg font-semibold flex items-center hover:underline justify-center lg:justify-start"
+            >
+              Learn More <span className="ml-2">&#129170;</span>
+            </a>
+          </div>
+
+          {/* Image Section */}
+          <div className="lg:w-1/2">
+            <img
+              src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_ZCIOgiZE.webp"
+              alt="Heritage Festival"
+              className="w-full rounded-lg shadow-md"
+            />
+          </div>
+        </div>
       </div>
-      <a
-        href="#"
-        className="text-orange-500 font-semibold flex items-center hover:underline justify-center lg:justify-start"
-      >
-        Learn More <span className="ml-2">&#129170;</span>
-      </a>
-    </div>
-
-    {/* Image Section */}
-    <div className="lg:w-1/2">
-      <img
-        src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_ZCIOgiZE.webp"
-        alt="Heritage Festival"
-        className="w-full rounded-lg shadow-md"
-      />
-    </div>
-  </div>
-</div>
-
 
       <div className="px-6 lg:px-20">
-  <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-16 border-b border-black gap-8">
-    {/* Image Section */}
-    <div className="lg:w-1/2">
-      <img
-        src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_s0mgCr9c.webp"
-        alt="Heritage Festival"
-        className="w-full rounded-lg shadow-md"
-      />
-    </div>
-    {/* Text Section */}
-    <div className="lg:w-1/2 mb-10 lg:mb-0 lg:pt-20">
-      <h2 className="text-2xl lg:text-3xl font-bold mb-6">
-        Cultural Crafts Workshop
-      </h2>
-      <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-        Participants enjoyed hands-on experiences creating traditional
-        crafts, fostering creativity and a deeper appreciation for cultural
-        heritage.
-      </p>
-      <div className="flex flex-wrap gap-3 mb-6 text-sm">
-        <span className="text-green-600 font-medium">
-          # <span className="text-black">Community Engagement</span>
-        </span>
-        <span className="text-green-600 font-medium">
-          # <span className="text-black">Interactive Workshops</span>
-        </span>
-        <span className="text-green-600 font-medium">
-          # <span className="text-black">Cultural Performances</span>
-        </span>
+        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-16 border-b border-black gap-8">
+          {/* Image Section */}
+          <div className="lg:w-1/2">
+            <img
+              src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_s0mgCr9c.webp"
+              alt="Heritage Festival"
+              className="w-full rounded-lg shadow-md"
+            />
+          </div>
+          {/* Text Section */}
+          <div className="lg:w-1/2 mb-10 lg:mb-0 ">
+            <h2 className="text-2xl lg:text-4xl font-bold mb-6">
+              Cultural Crafts Workshop
+            </h2>
+            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+              Participants enjoyed hands-on experiences creating traditional
+              crafts, fostering creativity and a deeper appreciation for
+              cultural heritage.
+            </p>
+            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+              Participants enjoyed hands-on experiences creating traditional
+              crafts, fostering creativity and a deeper appreciation for
+              cultural heritage.
+            </p>
+            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+              Participants enjoyed hands-on experiences creating traditional
+              crafts, fostering creativity and a deeper appreciation for
+              cultural heritage.
+            </p>
+            <div className="flex flex-wrap gap-3 mb-6 text-sm">
+              <span className="text-green-600 font-medium">
+                # <span className="text-black">Community Engagement</span>
+              </span>
+              <span className="text-green-600 font-medium">
+                # <span className="text-black">Interactive Workshops</span>
+              </span>
+              <span className="text-green-600 font-medium">
+                # <span className="text-black">Cultural Performances</span>
+              </span>
+            </div>
+            <a
+              href="#"
+              className="text-orange-500 text-lg  font-semibold flex items-center hover:underline"
+            >
+              Discover More <span className="ml-2">&#129170;</span>
+            </a>
+          </div>
+        </div>
       </div>
-      <a
-        href="#"
-        className="text-orange-500 font-semibold flex items-center hover:underline"
-      >
-        Discover More <span className="ml-2">&#129170;</span>
-      </a>
-    </div>
-  </div>
-</div>
       <div className="px-6 lg:px-20">
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-16">
           {/* Text Section */}
-          <div className="lg:w-1/2 mb-10 lg:mb-0 lg:pt-20">
-            <h2 className="text-2xl lg:text-3xl font-bold mb-4">
+          <div className="lg:w-1/2 mb-10 lg:mb-0 ">
+            <h2 className="text-2xl lg:text-4xl font-bold mb-4">
               Community Heritage Day
             </h2>
             <p className="text-gray-600 mb-4 text-lg">
-              A day filled with activities, performances, and food that brought{" "}
-              <br />
+              A day filled with activities, performances, and food that brought
+              together families to celebrate our rich cultural history.
+            </p>
+            <p className="text-gray-600 mb-4 text-lg">
+              A day filled with activities, performances, and food that brought
+              together families to celebrate our rich cultural history.
+            </p>
+            <p className="text-gray-600 mb-4 text-lg">
+              A day filled with activities, performances, and food that brought
               together families to celebrate our rich cultural history.
             </p>
             <div className="flex flex-wrap gap-3 mb-6 text-sm">
@@ -243,7 +268,7 @@ const Events = () => {
             </div>
             <a
               href="#"
-              className="text-orange-500 font-semibold flex items-center hover:underline"
+              className="text-orange-500 text-lg font-semibold flex items-center hover:underline"
             >
               Join Us <span className="ml-2">&#129170;</span>
             </a>
@@ -260,35 +285,43 @@ const Events = () => {
         </div>
       </div>
       <div className="px-6 lg:px-20">
-  <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-16 gap-8">
-    {/* Image Section */}
-    <div className="lg:w-1/2">
-      <img
-        src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_Ixm3UwyY.webp"
-        alt="Heritage Festival"
-        className="w-full rounded-lg shadow-md"
-      />
-    </div>
-    {/* Text Section */}
-    <div className="lg:w-1/2 mb-10 lg:mb-0 lg:pt-20">
-      <h2 className="text-2xl lg:text-4xl font-bold mb-6">
-        Join Our Community
-      </h2>
-      <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-        Become a part of Heritage Haven’s mission to preserve cultural <br />
-        heritage. We offer various volunteer opportunities that allow you <br />
-        to engage with our community and make a difference.
-      </p>
-      <button className="border mt-6 border-orange-600 px-6 rounded-md py-3 text-orange-600 hover:bg-orange-700 transition ease-in-out duration-300 transform hover:scale-95 hover:text-white text-sm font-semibold">
-        Learn More
-      </button>
-    </div>
-  </div>
-</div>
+        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-16 gap-8">
+          {/* Image Section */}
+          <div className="lg:w-1/2">
+            <img
+              src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_Ixm3UwyY.webp"
+              alt="Heritage Festival"
+              className="w-full rounded-lg shadow-md"
+            />
+          </div>
+          {/* Text Section */}
+          <div className="lg:w-1/2 mb-10 lg:mb-0 ">
+            <h2 className="text-2xl lg:text-4xl font-bold mb-6">
+              Join Our Community
+            </h2>
+            <p className="text-gray-600 mb-6  text-start lg:text-lg leading-relaxed">
+              Become a part of Heritage Haven’s mission to preserve cultural{" "}
+              heritage. We offer various volunteer opportunities that allow you{" "}
+              to engage with our community and make a difference.
+            </p>
+            <p className="text-gray-600 mb-6  lg:text-lg text-start leading-relaxed">
+              Become a part of Heritage Haven’s mission to preserve cultural{" "}
+              heritage. We offer various volunteer opportunities that allow you{" "}
+              to engage with our community and make a difference.
+            </p>
+            <p className="text-gray-600 mb-6  lg:text-lg text-start leading-relaxed">
+              Become a part of Heritage Haven’s mission to preserve cultural{" "}
+              heritage. We offer various volunteer opportunities that allow you{" "}
+              to engage with our community and make a difference.
+            </p>
+            <button className="border mt-6  border-orange-600 px-6 rounded-md py-3 text-orange-600 hover:bg-orange-700 transition ease-in-out duration-300 transform hover:scale-95 hover:text-white text-sm font-semibold">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
 
-
-
-     <Footer/>
+      <Footer />
     </>
   );
 };
