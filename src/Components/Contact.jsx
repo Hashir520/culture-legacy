@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import React, { useState } from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -16,21 +16,21 @@ const Contact = () => {
     const newErrors = {};
 
     if (!formData.name.trim()) {
-      newErrors.name = 'Full Name is required';
+      newErrors.name = "Full Name is required";
     } else if (formData.name.length < 6) {
-      newErrors.name = 'Full Name must be at least 6 characters long';
+      newErrors.name = "Full Name must be at least 6 characters long";
     }
 
     if (!formData.email.trim()) {
-      newErrors.email = 'Email Address is required';
+      newErrors.email = "Email Address is required";
     } else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(formData.email)) {
-      newErrors.email = 'Enter a valid email address';
+      newErrors.email = "Enter a valid email address";
     }
 
     if (!formData.message.trim()) {
-      newErrors.message = 'Message is required';
+      newErrors.message = "Message is required";
     } else if (formData.message.length < 10) {
-      newErrors.message = 'Message must be at least 10 characters long';
+      newErrors.message = "Message must be at least 10 characters long";
     }
 
     setErrors(newErrors);
@@ -48,8 +48,8 @@ const Contact = () => {
 
     if (validateForm()) {
       setIsSubmitted(true);
-      alert('Message sent successfully!');
-      setFormData({ name: '', email: '', message: '' });
+      alert("Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" });
       setErrors({});
     } else {
       setIsSubmitted(false);
@@ -126,13 +126,15 @@ const Contact = () => {
                       d="M12 2.25C6.615 2.25 2.25 6.615 2.25 12S6.615 21.75 12 21.75 21.75 17.385 21.75 12 17.385 2.25 12 2.25z"
                     />
                   </svg>
-                  LDA Avenue 1 Block D Lahore
+                  LDA Avenue 1  Block D Lahore
                 </li>
               </ul>
             </div>
             {/* Right Section */}
             <div className="p-8">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">Contact Us</h2>
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                Contact Us
+              </h2>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label
@@ -159,7 +161,7 @@ const Contact = () => {
                     htmlFor="email"
                     className="block text-lg font-medium text-gray-700"
                   >
-                    Email 
+                    Email
                   </label>
                   <input
                     type="email"
@@ -191,7 +193,9 @@ const Contact = () => {
                     placeholder="Write your message here..."
                   />
                   {errors.message && (
-                    <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.message}
+                    </p>
                   )}
                 </div>
                 <button
