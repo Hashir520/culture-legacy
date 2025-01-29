@@ -7,7 +7,7 @@ import React from "react";
 
 export default function CommunityVoicesSlider() {
   return (
-    <div className="bg-gray-50 py-10">
+    <div className="bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-4">
           Community Voices

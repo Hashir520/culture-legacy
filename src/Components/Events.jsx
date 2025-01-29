@@ -134,24 +134,36 @@ const Events = () => {
         </div>
       </div>
 
-      <div className="px-6 lg:px-20">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-16 border-b border-black">
+      <div className="flex flex-col  items-start lg:justify-between px-6 lg:px-32 py-16 gap-8">
+        <h1 className="text-2xl lg:text-4xl  font-bold text-center lg:text-left">
+          Celebrating Our Community
+        </h1>
+
+        <div className="text-center lg:text-left lg:w-3/4">
+          <p className="  text-justify leading-relaxed">
+            Explore the vibrant moments from our past festivals that brought our
+            community together in celebration of cultural heritage.
+          </p>
+        </div>
+      </div>
+      <div className="px-6 lg:px-32">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-12 ">
           {/* Text Section */}
           <div className="lg:w-1/2 mb-10 lg:mb-0  text-center lg:text-left">
             <h2 className="text-2xl lg:text-4xl font-bold mb-4">
               Annual Heritage Festival
             </h2>
-            <p className="text-gray-600 mb-4 text-sm lg:text-lg ">
+            <p className="text-gray-600 mb-4 text-base ">
               This festival featured traditional performances, delicious food
               stalls, and engaging workshops that celebrated our diverse
               cultural traditions.
             </p>
-            <p className="text-gray-600 mb-4 text-sm lg:text-lg ">
+            <p className="text-gray-600 mb-4 text-base ">
               This festival featured traditional performances, delicious food
               stalls, and engaging workshops that celebrated our diverse
               cultural traditions.
             </p>
-            <p className="text-gray-600 mb-4 text-sm lg:text-lg ">
+            <p className="text-gray-600 mb-4 text-base ">
               This festival featured traditional performances, delicious food
               stalls, and engaging workshops that celebrated our diverse
               cultural traditions.
@@ -176,7 +188,7 @@ const Events = () => {
           </div>
 
           {/* Image Section */}
-          <div className="lg:w-1/2">
+          <div className="lg:w-2/5">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_ZCIOgiZE.webp"
               alt="Heritage Festival"
@@ -186,10 +198,10 @@ const Events = () => {
         </div>
       </div>
 
-      <div className="px-6 lg:px-20">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-16 border-b border-black gap-8">
+      <div className="px-6 lg:px-32">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-16  gap-8">
           {/* Image Section */}
-          <div className="lg:w-1/2">
+          <div className="lg:w-2/5">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_s0mgCr9c.webp"
               alt="Heritage Festival"
@@ -201,17 +213,17 @@ const Events = () => {
             <h2 className="text-2xl lg:text-4xl font-bold mb-6">
               Cultural Crafts Workshop
             </h2>
-            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+            <p className="text-gray-600 mb-6 text-base leading-relaxed">
               Participants enjoyed hands-on experiences creating traditional
               crafts, fostering creativity and a deeper appreciation for
               cultural heritage.
             </p>
-            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+            <p className="text-gray-600 mb-6 text-base leading-relaxed">
               Participants enjoyed hands-on experiences creating traditional
               crafts, fostering creativity and a deeper appreciation for
               cultural heritage.
             </p>
-            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
+            <p className="text-gray-600 mb-6 text-base leading-relaxed">
               Participants enjoyed hands-on experiences creating traditional
               crafts, fostering creativity and a deeper appreciation for
               cultural heritage.
@@ -236,22 +248,22 @@ const Events = () => {
           </div>
         </div>
       </div>
-      <div className="px-6 lg:px-20">
+      <div className="px-6 lg:px-32">
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-16">
           {/* Text Section */}
           <div className="lg:w-1/2 mb-10 lg:mb-0 ">
             <h2 className="text-2xl lg:text-4xl font-bold mb-4">
               Community Heritage Day
             </h2>
-            <p className="text-gray-600 mb-4 text-lg">
+            <p className="text-gray-600 mb-4 text-base">
               A day filled with activities, performances, and food that brought
               together families to celebrate our rich cultural history.
             </p>
-            <p className="text-gray-600 mb-4 text-lg">
+            <p className="text-gray-600 mb-4 text-base">
               A day filled with activities, performances, and food that brought
               together families to celebrate our rich cultural history.
             </p>
-            <p className="text-gray-600 mb-4 text-lg">
+            <p className="text-gray-600 mb-4 text-base">
               A day filled with activities, performances, and food that brought
               together families to celebrate our rich cultural history.
             </p>
@@ -275,7 +287,7 @@ const Events = () => {
           </div>
 
           {/* Image Section */}
-          <div className="lg:w-1/2">
+          <div className="lg:w-2/5">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_rLhSpdEQ.webp"
               alt="Heritage Festival"
@@ -284,10 +296,10 @@ const Events = () => {
           </div>
         </div>
       </div>
-      <div className="px-6 lg:px-20">
+      <div className="px-6 lg:px-32">
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between py-16 gap-8">
           {/* Image Section */}
-          <div className="lg:w-1/2">
+          <div className="lg:w-2/5">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_Ixm3UwyY.webp"
               alt="Heritage Festival"
@@ -299,17 +311,17 @@ const Events = () => {
             <h2 className="text-2xl lg:text-4xl font-bold mb-6">
               Join Our Community
             </h2>
-            <p className="text-gray-600 mb-6  text-start lg:text-lg leading-relaxed">
+            <p className="text-gray-600 mb-6  text-start text-base leading-relaxed">
+              Become a part of Heritage Haven’s mission to preserve cultural
+              heritage. We offer various volunteer opportunities that allow you
+              to engage with our community and make a difference.
+            </p>
+            <p className="text-gray-600 mb-6   text-start text-base leading-relaxed">
               Become a part of Heritage Haven’s mission to preserve cultural{" "}
               heritage. We offer various volunteer opportunities that allow you{" "}
               to engage with our community and make a difference.
             </p>
-            <p className="text-gray-600 mb-6  lg:text-lg text-start leading-relaxed">
-              Become a part of Heritage Haven’s mission to preserve cultural{" "}
-              heritage. We offer various volunteer opportunities that allow you{" "}
-              to engage with our community and make a difference.
-            </p>
-            <p className="text-gray-600 mb-6  lg:text-lg text-start leading-relaxed">
+            <p className="text-gray-600 mb-6  text-base text-start leading-relaxed">
               Become a part of Heritage Haven’s mission to preserve cultural{" "}
               heritage. We offer various volunteer opportunities that allow you{" "}
               to engage with our community and make a difference.
