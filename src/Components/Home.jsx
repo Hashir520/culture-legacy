@@ -62,7 +62,7 @@ const Home = () => {
           </h2>
           <p className="text-gray-600 mt-4 text-base">
             At Heritage Haven, we are dedicated to preserving cultural
-            traditions through community engagement and education. Our
+            traditions through community's engagement and education. Our
             passionate team works tirelessly to create inclusive experiences
             that celebrate our diverse history and foster appreciation for
             cultural heritage.
@@ -72,7 +72,7 @@ const Home = () => {
               <p className="text-2xl font-bold text-gray-900">2024 years</p>
               <p className="text-gray-600 text-base">
                 Since our founding, we have been committed to cultural
-                preservation and education.
+                preservation.
               </p>
             </div>
             <div>

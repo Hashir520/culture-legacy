@@ -126,8 +126,9 @@ const Contact = () => {
                       d="M12 2.25C6.615 2.25 2.25 6.615 2.25 12S6.615 21.75 12 21.75 21.75 17.385 21.75 12 17.385 2.25 12 2.25z"
                     />
                   </svg>
-                  LDA Avenue 1  Block D Lahore
+                  LDA Avenue 1 921 Block D Lahore
                 </li>
+                
               </ul>
             </div>
             {/* Right Section */}
