@@ -25,7 +25,7 @@ const Navbar = () => {
         <Link to="/events" className="font-bold text-black ">
           Events
         </Link>
-        <Link to = '/contact' className="font-bold text-black ">
+        <Link to="/contact" className="font-bold text-black ">
           Contact
         </Link>
       </div>
@@ -38,5 +38,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-

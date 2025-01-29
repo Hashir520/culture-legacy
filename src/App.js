@@ -2,7 +2,6 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./Components/Home";
-
 import About from "./Components/About";
 import Highlights from "./Components/Highlights";
 import Events from "./Components/Events";
@@ -11,6 +10,7 @@ import Contact from "./Components/Contact";
 import HCards from "./Components/HCards";
 import Cards from "./Components/Cards"
 import Celeberate from "./Components/Celeberate";
+import Navbar from "./Components/Navbar";
 
 const router = createBrowserRouter([
   {
@@ -49,7 +49,10 @@ const router = createBrowserRouter([
     path: "/celeberate",
     element: <Celeberate/>,
   },
-  
+  {
+    path: "/Nav",
+    element: <Navbar/>,
+  },
 ]);
 
 const App = () => {
