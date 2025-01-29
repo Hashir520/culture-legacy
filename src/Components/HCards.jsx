@@ -3,7 +3,16 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules"; // Added Autoplay module
 import React from "react";
-
+import { Link } from "react-router-dom"; 
+const cards = [
+  { id: 1, title: "Emily Johnson", description: "Heritage Haven's workshops have inspired my art and deepened my understanding of cultural traditions." },
+  { id: 2, title: "Michael Smith", description: "The educational programs are engaging and informative, making history come alive for my students." },
+  { id: 3, title: "Sarah Lee", description: "The annual heritage festival was a fantastic experience! I loved the diverse performances and food." },
+  { id: 4, title: "Laura White", description: "The artwork has been a great inspiration for my students' art projects and has helped them develop their skills." },
+  { id: 5, title: "James Wilson", description: "The local community has been incredibly supportive and welcoming, making our heritage programs a priority for our students." },
+  { id: 6, title: "David Brown", description: "I've heard great things about Heritage Haven, and I'm so happy to be a part of their programs." },
+  
+];
 export default function CommunityVoicesSlider() {
   return (
     <div className="bg-gray-50 py-20">
@@ -34,121 +43,29 @@ export default function CommunityVoicesSlider() {
           modules={[Autoplay]} // Include Autoplay module
           className="mySwiper"
         >
-          {/* Cards */}
-          <SwiperSlide>
-            <div className="bg-orange-400 shadow-md p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <div className="text-yellow-400  text-xl">★★★★★</div>
-              </div>
-              <p className="text-white mb-4">
-                Heritage Haven's workshops have inspired my art and deepened my
-                understanding of cultural traditions.
-              </p>
-              <div className="flex items-center">
-                <img
-                  src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/thumbnail_female_BgWdkQBD.webp"
-                  alt="Emily Johnson"
-                  className="w-12 h-12 rounded-full mr-4"
-                />
-                <div>
-                  <h4 className="font-bold text-white">Emily Johnson</h4>
-                  <p className="text-white text-sm">Local Artist</p>
+          {cards.map((card) => (
+            <SwiperSlide key={card.id}>
+              <Link to={`/card/${card.id}`}>
+                <div className="bg-orange-400 shadow-md p-6 rounded-lg">
+                  <div className="flex items-center mb-4">
+                    <div className="text-yellow-400 text-xl">★★★★★</div>
+                  </div>
+                  <p className="text-white mb-4">{card.description}</p>
+                  <div className="flex items-center">
+                    <img
+                      src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/thumbnail_female_BgWdkQBD.webp"
+                      alt={card.title}
+                      className="w-12 h-12 rounded-full mr-4"
+                    />
+                    <div>
+                      <h4 className="font-bold text-white">{card.title}</h4>
+                      <p className="text-white text-sm">Local Artist</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="bg-orange-400 shadow-md p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <div className="text-yellow-400 text-xl">★★★★★</div>
-              </div>
-              <p className="text-white mb-4">
-                The educational programs at Heritage Haven are invaluable for my
-                students, making history come alive.
-              </p>
-              <div className="flex items-center">
-                <img
-                  src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/thumbnail_male_0oOFSWvf.webp"
-                  alt="Michael Smith"
-                  className="w-12 h-12 rounded-full mr-4"
-                />
-                <div>
-                  <h4 className="font-bold text-white">Michael Smith</h4>
-                  <p className="text-white text-sm">History Teacher</p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="bg-orange-400 shadow-md p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <div className="text-yellow-400  text-xl">★★★★★</div>
-              </div>
-              <p className="text-white mb-4">
-                The educational programs at Heritage Haven are invaluable for my
-                students, making history come alive.
-              </p>
-              <div className="flex items-center">
-                <img
-                  src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/thumbnail_female_2RaUVpAi.webp"
-                  alt="Michael Smith"
-                  className="w-12 h-12 rounded-full mr-4"
-                />
-                <div>
-                  <h4 className="font-bold text-white">Michael Smith</h4>
-                  <p className="text-white text-sm">History Teacher</p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="bg-orange-400 shadow-md p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <div className="text-yellow-400  text-xl">★★★★★</div>
-              </div>
-              <p className="text-white mb-4">
-                Heritage Haven's workshops have inspired my art and deepened my
-                understanding of cultural traditions.
-              </p>
-              <div className="flex items-center">
-                <img
-                  src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/thumbnail_male_DLmG8Fel.webp"
-                  alt="Emily Johnson"
-                  className="w-12 h-12 rounded-full mr-4"
-                />
-                <div>
-                  <h4 className="font-bold text-white">Emily Johnson</h4>
-                  <p className="text-white text-sm">Local Artist</p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="bg-orange-400 shadow-md p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <div className="text-yellow-400  text-xl">★★★★★</div>
-              </div>
-              <p className="text-white mb-4">
-                Heritage Haven's workshops have inspired my art and deepened my
-                understanding of cultural traditions.
-              </p>
-              <div className="flex items-center">
-                <img
-                  src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/thumbnail_female_BgWdkQBD.webp"
-                  alt="Emily Johnson"
-                  className="w-12 h-12 rounded-full mr-4"
-                />
-                <div>
-                  <h4 className="font-bold text-white">Emily Johnson</h4>
-                  <p className="text-white text-sm">Local Artist</p>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          {/* Add other slides as needed */}
+              </Link>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

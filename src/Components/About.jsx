@@ -1,18 +1,20 @@
-import React from "react";
 import { Link } from "react-router-dom";
+
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
+
 const About = () => {
+
   return (
     <>
       <Navbar />
       {/* About Discription */}
-      <div className="pt-20 sm:pt-28 text-center px-4 sm:px-8 lg:px-20">
+      <div  className="pt-20 sm:pt-28 text-center px-4 sm:px-8 lg:px-20">
         <h1 className="text-2xl sm:text-4xl font-bold  ">
           About Heritage Haven
         </h1>
-        <p className="text-base sm:text-lg  pt-4">
+        <p  className="text-base sm:text-lg  pt-4">
           Discover how Heritage Haven celebrates cultural diversity through
           <br className="hidden sm:block" /> engaging programs and immersive
           experiences that connect communities.
@@ -21,7 +23,7 @@ const About = () => {
 
       <div className="flex flex-col-reverse md:flex-col-reverse lg:flex-row md:items-center px-6 md:px-10 space-y-10 md:space-y-0 md:space-x-5 my-10 md:my-20">
         <div className="md:w-1/2">
-          <h2 className="text-4xl font-bold text-gray-900">
+          <h2  className="text-4xl font-bold text-gray-900">
             Our Commitment to Heritage
           </h2>
           <p className="text-gray-600 mt-4">
