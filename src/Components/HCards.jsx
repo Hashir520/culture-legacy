@@ -4,7 +4,6 @@ import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules"; // Added Autoplay module
 import React from "react";
 
-
 export default function CommunityVoicesSlider() {
   return (
     <div className="bg-gray-50 py-20">
