@@ -12,7 +12,7 @@ const Navbar = () => {
         </h1>
       </div>
       {/* Navigation Links */}
-      <div className="hidden md:hidden lg:flex w-2/4 justify-around">
+      <div className="hidden md:hidden lg:flex w-2/5 justify-around">
         <Link to="/" className="font-bold text-black ">
           Home
         </Link>
@@ -38,3 +38,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
