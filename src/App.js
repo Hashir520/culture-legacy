@@ -8,6 +8,8 @@ import Events from "./Components/Events";
 import Detail from "./Components/Detail";
 import Contact from "./Components/Contact";
 
+import CardList from "./Components/CardList";
+
 import Navbar from "./Components/Navbar";
 import CardDetail from "./Components/CardDetail";
 
@@ -37,7 +39,10 @@ const router = createBrowserRouter([
     element: <Contact/>,
   },
  
-  
+  {
+    path: "/card",
+    element: <CardList/>,
+  },
  
   {
     path: "/Nav",

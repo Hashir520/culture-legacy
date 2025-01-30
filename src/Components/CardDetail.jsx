@@ -1,15 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import cards from "./CardData"; 
 
-const cards = [
-  { id: 1, title: "Emily Johnson", description: "Heritage Haven's workshops have inspired my art and deepened my understanding of cultural traditions." },
-  { id: 2, title: "Card 2", description: "This is card 2 description" },
-  { id: 3, title: "Card 3", description: "This is card 3 description" },
-  { id: 4, title: "Card 3", description: "This is card 3 description" },
-  { id: 5, title: "Card 5", description: "This is card 5 description" },
-  { id: 6, title: "Card 6", description: "This is card 6 description" },
-  
-];
 
 function CardDetail() {
   const { id } = useParams();
@@ -20,11 +12,31 @@ function CardDetail() {
   }
 
   return (
-    <div className=" py-56">
-      <div className="max-w-3xl mx-auto p-6 bg-orange-400 shadow-lg rounded-lg">
-        <h2 className="text-3xl font-bold mb-4">{card.title}</h2>
-        <p className="text-lg">{card.description}</p>
-        
+    <div className="py-12 px-4 md:py-20 ">
+      <div className="max-w-lg md:max-w-3xl mx-auto p-6 bg-orange-400 shadow-lg rounded-lg">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-white text-center sm:text-left">
+          {card.title}
+        </h2>
+
+        <div className="flex justify-center sm:justify-start mb-4">
+          <div className="text-yellow-400 text-xl sm:text-2xl">★★★★★</div>
+        </div>
+
+        <p className="text-sm sm:text-base text-white text-center sm:text-left">
+          {card.description}
+        </p>
+
+        <div className="flex flex-col sm:flex-row items-center pt-4">
+          <img
+            src={card.image}
+            alt={card.title}
+            className="w-16 h-16 sm:w-12 sm:h-12 rounded-full mb-4 sm:mb-0 sm:mr-4 object-cover"
+          />
+          <div className="text-center sm:text-left">
+            <h4 className="font-bold text-white text-lg">{card.title}</h4>
+            <p className="text-white text-sm">{card.designation}</p>
+          </div>
+        </div>
       </div>
     </div>
   );

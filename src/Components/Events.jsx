@@ -1,8 +1,26 @@
-import React from "react";
+
+
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
+import { gsap } from "gsap";
+import React, { useEffect, useRef } from "react";
+
 const Events = () => {
+  const textRef = useRef(null);
+  const textHead = useRef(null);
+  useEffect(() => {
+    gsap.fromTo(
+      textRef.current,
+      { y: 100, opacity: 0 }, // Start position (off-screen)
+      { y: 0, opacity: 1, duration: 1.5, ease: "power3.out" } // End position
+    );
+    gsap.fromTo(
+      textHead.current,
+      { y: 100, opacity: 0 }, // Start position (off-screen)
+      { y: 0, opacity: 1, duration: 2, ease: "power3.out" } // End position
+    );
+  }, []);
   return (
     <>
       <header
@@ -18,13 +36,13 @@ const Events = () => {
             <div className="pt-36">
               <div className="relative overflow-hidden h-16">
                 <h3
-                  id="checks"
+                  ref={textHead}
                   className="text-xl md:text-5xl  whitespace-nowrap tracking-wide drop-shadow-lg font-bold "
                 >
                   Discover Cultural Wonders
                 </h3>
               </div>
-              <p className="text-sm md:text-lg  font-bold mb-6 md:mb-4 leading-relaxed mx-auto max-w-screen-md">
+              <p ref={textRef} className="text-sm md:text-lg  font-bold mb-6 md:mb-4 leading-relaxed mx-auto max-w-screen-md">
                 Join us at Heritage Haven for an unforgettable journey through
                 diverse cultural traditions. Our upcoming festivals offer
                 immersive experiences that celebrate history and community.

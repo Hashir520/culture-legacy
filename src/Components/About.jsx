@@ -1,20 +1,33 @@
 import { Link } from "react-router-dom";
-
+import React, { useEffect, useRef } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-
+import gsap from "gsap";
 
 const About = () => {
-
+  const textRef = useRef(null);
+  const textHead = useRef(null);
+  useEffect(() => {
+    gsap.fromTo(
+      textRef.current,
+      { y: 100, opacity: 0 }, // Start position (off-screen)
+      { y: 0, opacity: 1, duration: 1.5, ease: "power3.out" } // End position
+    );
+    gsap.fromTo(
+      textHead.current,
+      { y: 100, opacity: 0 }, // Start position (off-screen)
+      { y: 0, opacity: 1, duration: 1.5, ease: "power3.out" } // End position
+    );
+  }, []);
   return (
     <>
       <Navbar />
       {/* About Discription */}
       <div  className="pt-20 sm:pt-28 text-center px-4 sm:px-8 lg:px-20">
-        <h1 className="text-2xl sm:text-4xl font-bold  ">
+        <h1 ref={textHead} className="text-2xl sm:text-4xl font-bold  ">
           About Heritage Haven
         </h1>
-        <p  className="text-base sm:text-lg  pt-4">
+        <p ref={textRef} className="text-base sm:text-lg  pt-4">
           Discover how Heritage Haven celebrates cultural diversity through
           <br className="hidden sm:block" /> engaging programs and immersive
           experiences that connect communities.

@@ -1,9 +1,25 @@
-import React from "react";
+
 import Navbar from "./Navbar";
 import HCards from "./HCards";
 import Footer from "./Footer";
+import gsap from "gsap";
 
+import React, { useEffect, useRef } from "react";
 const Home = () => {
+  const textRef = useRef(null);
+  const textHead = useRef(null);
+  useEffect(() => {
+    gsap.fromTo(
+      textRef.current,
+      { y: 100, opacity: 0 }, // Start position (off-screen)
+      { y: 0, opacity: 1, duration: 1.5, ease: "power3.out" } // End position
+    );
+    gsap.fromTo(
+      textHead.current,
+      { y: 100, opacity: 0 }, // Start position (off-screen)
+      { y: 0, opacity: 1, duration: 2, ease: "power3.out" } // End position
+    );
+  }, []);
   return (
     <>
       <header
@@ -20,15 +36,15 @@ const Home = () => {
             <div className="pt-36">
               <div className="relative overflow-hidden h-16">
                 <h3
-                  id="checks"
+               ref={textHead}
                   className="text-xl md:text-5xl  whitespace-nowrap tracking-wide drop-shadow-lg font-bold "
                 >
                   Welcome to Heritage Legacy
                 </h3>
               </div>
               <p
-                // ref={textRef}
-                id="chck"
+                ref={textRef}
+               
                 className="text-sm md:text-lg mb-6 md:mb-4 leading-relaxed mx-auto max-w-screen-md"
               >
                 Discover the beauty of our diverse cultural heritage through
