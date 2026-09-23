@@ -31,13 +31,13 @@ const Detail = () => {
 
             <div className="space-y-3 md:space-y-0 md:space-x-4 flex flex-col md:flex-row items-center justify-center">
               <a
-                href="#"
+                href="/about"
                 className="px-4 py-2 md:px-6 md:py-3 rounded bg-white text-black text-xs md:text-sm font-medium uppercase tracking-wider transition duration-300 hover:bg-[#10b981] hover:text-white"
               >
                 Learn More
               </a>
               <a
-                href="transparent.html"
+                href="/contact"
                 className="px-4 py-2 md:px-6 md:py-3 rounded bg-[#10b981] text-white text-xs md:text-sm font-bold uppercase tracking-wider transition duration-300 hover:bg-white hover:text-black"
               >
                 Sign Up Here
@@ -106,7 +106,7 @@ const Detail = () => {
           <div className="bg-white  rounded-lg  overflow-hidden ">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_EQrvN8si.webp"
-              alt="Image 1"
+              alt="Traditional pottery workshop"
               className="w-full h-48 md:h-64 object-cover"
             />
             <div className="p-4">
@@ -124,7 +124,7 @@ const Detail = () => {
           <div className="bg-white  rounded-lg  overflow-hidden ">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_kEFbTjH3.webp"
-              alt="Image 2"
+              alt="Cultural dance experience"
               className="w-full h-48 md:h-64 object-cover"
             />
             <div className="p-4">
@@ -142,7 +142,7 @@ const Detail = () => {
           <div className="bg-white rounded-lg  overflow-hidden ">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_2jiLli1A.webp"
-              alt="Image 3"
+              alt="Storytelling and folklore"
               className="w-full h-48 md:h-64 object-cover"
             />
             <div className="p-4">

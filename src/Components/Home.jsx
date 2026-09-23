@@ -56,13 +56,13 @@ const Home = () => {
 
             <div className="space-y-3 md:space-y-0 md:space-x-4 flex flex-col md:flex-row items-center justify-center">
               <a
-                href="#"
+                href="/about"
                 className="px-4 py-2 md:px-6 md:py-3 rounded bg-white text-black text-xs md:text-sm font-medium uppercase tracking-wider transition duration-300 hover:bg-[#10b981] hover:text-white"
               >
                 Learn More
               </a>
               <a
-                href="transparent.html"
+                href="/contact"
                 className="px-4 py-2 md:px-6 md:py-3 rounded bg-[#10b981] text-white text-xs md:text-sm font-bold uppercase tracking-wider transition duration-300 hover:bg-white hover:text-black"
               >
                 Sign Up Here
@@ -147,7 +147,7 @@ const Home = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden transition-transform transform hover:-translate-y-2">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_BYZmNiKS.webp"
-              alt="Image 1"
+              alt="Traditional crafts workshop"
               className="w-full h-48 md:h-64 object-cover"
             />
             <div className="p-4">
@@ -165,7 +165,7 @@ const Home = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden transition-transform transform hover:-translate-y-2">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_HOApCtLm.webp"
-              alt="Image 2"
+              alt="Annual heritage festival"
               className="w-full h-48 md:h-64 object-cover"
             />
             <div className="p-4">
@@ -182,7 +182,7 @@ const Home = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden transition-transform transform hover:-translate-y-2">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_pHNsdKIk.webp"
-              alt="Image 3"
+              alt="Cultural history workshop"
               className="w-full h-48 md:h-64 object-cover"
             />
             <div className="p-4">
@@ -223,7 +223,7 @@ const Home = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden transition-transform transform hover:-translate-y-2">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_UZLhnXSA.webp"
-              alt="Image 1"
+              alt="Cultural diversity festival"
               className="w-full h-48 md:h-64 lg:h-72 object-cover"
             />
             <div className="p-4">
@@ -240,7 +240,7 @@ const Home = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden transition-transform transform hover:-translate-y-2">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_178SwVYS.webp"
-              alt="Image 2"
+              alt="Hands-on cultural workshop"
               className="w-full h-48 md:h-64 lg:h-72 object-cover"
             />
             <div className="p-4">
@@ -257,7 +257,7 @@ const Home = () => {
           <div className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden transition-transform transform hover:-translate-y-2">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_MFpxSKDL.webp"
-              alt="Image 3"
+              alt="Cultural food tasting"
               className="w-full h-48 md:h-64 lg:h-72 object-cover"
             />
             <div className="p-4">
@@ -323,7 +323,7 @@ const Home = () => {
               </span>
             </div>
             <a
-              href="#"
+              href="/events"
               className="text-orange-500 text-lg font-semibold flex items-center hover:underline justify-center lg:justify-start"
             >
               Learn More <span className="ml-2">&#129170;</span>
@@ -334,7 +334,7 @@ const Home = () => {
           <div className="lg:w-2/5">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_cx4qbG0D.webp"
-              alt="Heritage Festival"
+              alt="Annual heritage festival celebration"
               className="w-full rounded-lg shadow-md"
             />
           </div>
@@ -347,7 +347,7 @@ const Home = () => {
           <div className="lg:w-2/5">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_T9V3J88j.webp"
-              alt="Heritage Festival"
+              alt="Cultural crafts workshop"
               className="w-full rounded-lg shadow-md"
             />
           </div>
@@ -383,7 +383,7 @@ const Home = () => {
               </span>
             </div>
             <a
-              href="#"
+              href="/events"
               className="text-orange-500 text-lg  font-semibold flex items-center hover:underline"
             >
               Discover More <span className="ml-2">&#129170;</span>
@@ -422,7 +422,7 @@ const Home = () => {
               </span>
             </div>
             <a
-              href="#"
+              href="/contact"
               className="text-orange-500 text-lg font-semibold flex items-center hover:underline"
             >
               Join Us <span className="ml-2">&#129170;</span>
@@ -433,7 +433,7 @@ const Home = () => {
           <div className="lg:w-2/5">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_PwLgcLNI.webp"
-              alt="Heritage Festival"
+              alt="Community heritage day"
               className="w-full rounded-lg shadow-md"
             />
           </div>

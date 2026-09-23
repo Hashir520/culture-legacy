@@ -36,37 +36,37 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm text-white">
+                <a href="/contact" className="text-sm text-white">
                   Contact Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-white">
+                <a href="/events" className="text-sm text-white">
                   Delivery &amp; Orders
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-white">
+                <a href="/events" className="text-sm text-white">
                   Returns &amp; Exchanges
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-white">
+                <a href="/about" className="text-sm text-white">
                   Terms &amp; Conditions
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-white">
+                <a href="/about" className="text-sm text-white">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-white">
+                <a href="/detail" className="text-sm text-white">
                   Track My Order
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-white">
+                <a href="/detail" className="text-sm text-white">
                   Payment Guide
                 </a>
               </li>
@@ -80,27 +80,27 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-sm text-white">
+                <a href="/about" className="text-sm text-white">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-white">
+                <a href="/contact" className="text-sm text-white">
                   Careers
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-white">
+                <a href="/detail" className="text-sm text-white">
                   Store
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-white">
+                <a href="/events" className="text-sm text-white">
                   Addresses
                 </a>
               </li>
               <li>
-                <a href="#" className="text-2xl font-serif text-purple-600">
+                <a href="/about" className="text-2xl font-serif text-purple-600">
                   Gift Card
                 </a>
               </li>
@@ -119,7 +119,7 @@ const Footer = () => {
               >
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
-              <a href="" className="text-white hover:text-gray-700">
+              <a href="https://x.com" target="_blank" rel="noreferrer" className="text-white hover:text-gray-700" aria-label="Twitter">
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
               <a
@@ -128,10 +128,10 @@ const Footer = () => {
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
-              <a href="" className="text-white hover:text-gray-700">
+              <a href="https://www.youtube.com" target="_blank" rel="noreferrer" className="text-white hover:text-gray-700" aria-label="YouTube">
                 <FontAwesomeIcon icon={faYoutube} />
               </a>
-              <a href="#" className="text-white hover:text-gray-700">
+              <a href="https://www.pinterest.com" target="_blank" rel="noreferrer" className="text-white hover:text-gray-700" aria-label="Pinterest">
                 <FontAwesomeIcon icon={faPinterest} />
               </a>
               <a

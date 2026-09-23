@@ -52,13 +52,13 @@ const Events = () => {
 
             <div className="space-y-3 md:space-y-0 md:space-x-4 flex flex-col md:flex-row items-center justify-center">
               <a
-                href="#"
+                href="/about"
                 className="px-4 py-2 md:px-6 md:py-3 rounded bg-white text-black text-xs md:text-sm font-medium uppercase tracking-wider transition duration-300 hover:bg-[#10b981] hover:text-white"
               >
                 Learn More
               </a>
               <a
-                href="transparent.html"
+                href="/contact"
                 className="px-4 py-2 md:px-6 md:py-3 rounded bg-[#10b981] text-white text-xs md:text-sm font-bold uppercase tracking-wider transition duration-300 hover:bg-white hover:text-black"
               >
                 Sign Up Here
@@ -92,7 +92,7 @@ const Events = () => {
           <div className="bg-white  rounded-lg  overflow-hidden ">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_CQi3jiF6.webp"
-              alt="Image 1"
+              alt="Heritage festival preview"
               className="w-full h-48 md:h-64 object-cover"
             />
             <div className="p-4">
@@ -112,7 +112,7 @@ const Events = () => {
           <div className="bg-white  rounded-lg  overflow-hidden ">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_Z4rDODqp.webp"
-              alt="Image 2"
+              alt="Cultural workshop session"
               className="w-full h-48 md:h-64 object-cover"
             />
             <div className="p-4">
@@ -132,7 +132,7 @@ const Events = () => {
           <div className="bg-white rounded-lg  overflow-hidden ">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_PuU4u7np.webp"
-              alt="Image 3"
+              alt="Storytelling event"
               className="w-full h-48 md:h-64 object-cover"
             />
             <div className="p-4">
@@ -198,7 +198,7 @@ const Events = () => {
               </span>
             </div>
             <a
-              href="#"
+              href="/detail"
               className="text-orange-500 text-lg font-semibold flex items-center hover:underline justify-center lg:justify-start"
             >
               Learn More <span className="ml-2">&#129170;</span>
@@ -209,7 +209,7 @@ const Events = () => {
           <div className="lg:w-2/5">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_ZCIOgiZE.webp"
-              alt="Heritage Festival"
+              alt="Annual heritage festival celebration"
               className="w-full rounded-lg shadow-md"
             />
           </div>
@@ -222,7 +222,7 @@ const Events = () => {
           <div className="lg:w-2/5">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_s0mgCr9c.webp"
-              alt="Heritage Festival"
+              alt="Cultural crafts workshop"
               className="w-full rounded-lg shadow-md"
             />
           </div>
@@ -258,7 +258,7 @@ const Events = () => {
               </span>
             </div>
             <a
-              href="#"
+              href="/detail"
               className="text-orange-500 text-lg  font-semibold flex items-center hover:underline"
             >
               Discover More <span className="ml-2">&#129170;</span>
@@ -297,7 +297,7 @@ const Events = () => {
               </span>
             </div>
             <a
-              href="#"
+              href="/contact"
               className="text-orange-500 text-lg font-semibold flex items-center hover:underline"
             >
               Join Us <span className="ml-2">&#129170;</span>
@@ -308,7 +308,7 @@ const Events = () => {
           <div className="lg:w-2/5">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_rLhSpdEQ.webp"
-              alt="Heritage Festival"
+              alt="Community heritage day"
               className="w-full rounded-lg shadow-md"
             />
           </div>
@@ -320,7 +320,7 @@ const Events = () => {
           <div className="lg:w-2/5">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_Ixm3UwyY.webp"
-              alt="Heritage Festival"
+              alt="Community volunteer gathering"
               className="w-full rounded-lg shadow-md"
             />
           </div>

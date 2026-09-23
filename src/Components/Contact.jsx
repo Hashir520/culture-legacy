@@ -10,7 +10,6 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState({});
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const validateForm = () => {
     const newErrors = {};
@@ -47,12 +46,9 @@ const Contact = () => {
     e.preventDefault();
 
     if (validateForm()) {
-      setIsSubmitted(true);
       alert("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
       setErrors({});
-    } else {
-      setIsSubmitted(false);
     }
   };
 

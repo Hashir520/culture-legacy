@@ -118,10 +118,10 @@ const About = () => {
                 management and is passionate about community education.
               </p>
               <div className="mt-4 flex space-x-4">
-                <a href="#" className="text-blue-500 hover:text-blue-700">
+                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700" aria-label="LinkedIn profile for Dr. Emily Carter">
                   <i className="fab fa-linkedin" />
                 </a>
-                <a href="#" className="text-blue-500 hover:text-blue-700">
+                <a href="https://x.com" target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700" aria-label="Twitter profile for Dr. Emily Carter">
                   <i className="fab fa-twitter" />
                 </a>
               </div>
@@ -142,10 +142,10 @@ const About = () => {
                 background in anthropology.
               </p>
               <div className="mt-4 flex space-x-4">
-                <a href="#" className="text-blue-500 hover:text-blue-700">
+                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700" aria-label="LinkedIn profile for James Lee">
                   <i className="fab fa-linkedin" />
                 </a>
-                <a href="#" className="text-blue-500 hover:text-blue-700">
+                <a href="https://x.com" target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700" aria-label="Twitter profile for James Lee">
                   <i className="fab fa-twitter" />
                 </a>
               </div>
@@ -168,10 +168,10 @@ const About = () => {
                 inclusivity in all programs.
               </p>
               <div className="mt-4 flex space-x-4">
-                <a href="#" className="text-blue-500 hover:text-blue-700">
+                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700" aria-label="LinkedIn profile for Maria Gonzalez">
                   <i className="fab fa-linkedin" />
                 </a>
-                <a href="#" className="text-blue-500 hover:text-blue-700">
+                <a href="https://x.com" target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700" aria-label="Twitter profile for Maria Gonzalez">
                   <i className="fab fa-twitter" />
                 </a>
               </div>
@@ -194,10 +194,10 @@ const About = () => {
                 cultural practices to our programs.
               </p>
               <div className="mt-4 flex space-x-4">
-                <a href="#" className="text-blue-500 hover:text-blue-700">
+                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700" aria-label="LinkedIn profile for David Thompson">
                   <i className="fab fa-linkedin" />
                 </a>
-                <a href="#" className="text-blue-500 hover:text-blue-700">
+                <a href="https://x.com" target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700" aria-label="Twitter profile for David Thompson">
                   <i className="fab fa-twitter" />
                 </a>
               </div>

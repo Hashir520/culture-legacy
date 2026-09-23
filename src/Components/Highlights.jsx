@@ -12,7 +12,7 @@ const Highlights = () => {
           <div className="lg:w-1/2">
             <img
               src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_pLtNSpOU.webp"
-              alt="Heritage Festival"
+              alt="Community voices and heritage gathering"
               className="w-full rounded-lg shadow-md"
             />
           </div>
@@ -97,7 +97,7 @@ const Highlights = () => {
     <div className="lg:w-1/2 px-10">
       <img
         src="https://demo-programmatic.10web.me/wp-content/uploads/2024/12/tenweb_media_WsPqBSkj.webp"
-        alt="Heritage Festival"
+        alt="Community members sharing heritage stories"
         className="w-full rounded-lg shadow-md"
       />
     </div>

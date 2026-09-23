@@ -1,5 +1,5 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 
 import Home from "./Components/Home";
 import About from "./Components/About";
@@ -12,45 +12,70 @@ import CardList from "./Components/CardList";
 
 import Navbar from "./Components/Navbar";
 import CardDetail from "./Components/CardDetail";
+import { LoginPage, SignupPage } from "./Components/AuthPages";
+
+const AUTH_KEY = "heritageLegacyAuth";
+
+const ProtectedRoute = ({ children }) => {
+  return localStorage.getItem(AUTH_KEY) === "true" ? children : <Navigate to="/login" replace />;
+};
+
+const protect = (element) => <ProtectedRoute>{element}</ProtectedRoute>;
+
+const EntryRoute = () => {
+  return localStorage.getItem(AUTH_KEY) === "true" ? <Home /> : <LoginPage />;
+};
 
 const router = createBrowserRouter([
   {
-    path: "/about",
-    element: <About />,
+    path: "/",
+    element: <EntryRoute />,
   },
   {
-    path: "/",
-    element: <Home />,
+    path: "/about",
+    element: protect(<About />),
+  },
+  {
+    path: "/home",
+    element: protect(<Home />),
   },
   {
     path: "/detail",
-    element: <Detail />,
+    element: protect(<Detail />),
   },
   {
     path: "/hilights",
-    element: <Highlights />,
+    element: protect(<Highlights />),
   },
   {
     path: "/events",
-    element: <Events />,
+    element: protect(<Events />),
   },
   {
     path: "/contact",
-    element: <Contact/>,
+    element: protect(<Contact />),
   },
  
   {
     path: "/card",
-    element: <CardList/>,
+    element: protect(<CardList />),
   },
  
   {
     path: "/Nav",
-    element: <Navbar/>,
+    element: protect(<Navbar />),
   },
   {
     path: "/card/:id",
-    element: <CardDetail/>,
+    element: protect(<CardDetail />),
+  },
+  {
+    path: "/login",
+    element: <LoginPage />,
+  },
+  {
+    path: "/signup",
+    element: <SignupPage />,
   },
 ]);
 
